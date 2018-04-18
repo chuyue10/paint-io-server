@@ -21,7 +21,7 @@ const connect = server => {
   const io = require('socket.io')(server);
 
   // TODO 1.3 listen for new connections and use the provided "onSocketConnect" function
-  io.on('connect', onSocketConnect);
+  io.on('connect', onSocketConnect(io));
 }
 
 module.exports = connect;
