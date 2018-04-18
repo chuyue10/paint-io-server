@@ -12,6 +12,7 @@ const create = (username, id) => {
   return () => {
     delete users[username];
   };
+  console.log('Current Users: ', users);
 };
 
 const userExists = (username) =>
