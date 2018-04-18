@@ -68,5 +68,6 @@ const developmentConfig = {
 };
 
 module.exports = paintIOPath
-  ? {...config, ...developmentConfig}
+  // ? {...config, ...developmentConfig}
+  ? Object.assign(config, developmentConfig)
   : config;
